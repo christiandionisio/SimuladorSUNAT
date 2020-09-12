@@ -16,18 +16,18 @@ public class ConexionMySQL {
     
     private String dbname;
     private String user;
-    private String password = "";
-    private String url = "jdbc:mysql://localhost/" + dbname;
+    private String password = "lh823zjHJuswsjURzdxA";
+    private String url = "jdbc:mysql://bs6kozyeoercv8ybunfk-mysql.services.clever-cloud.com/" + dbname;
 
     public ConexionMySQL() {
-        this.dbname = "simulador_sunat";
-        this.user = "root";
-        this.url = "jdbc:mysql://localhost/" + this.dbname;
+        this.dbname = "bs6kozyeoercv8ybunfk";
+        this.user = "uc8cu1tso4vs0mmj";
+        this.url = "jdbc:mysql://bs6kozyeoercv8ybunfk-mysql.services.clever-cloud.com/" + this.dbname;
     }
 
     public ConexionMySQL(String dbname) {
         this.dbname = dbname;
-        this.user = "root";
+        this.user = "uc8cu1tso4vs0mmj";
         this.url = "jdbc:mysql://localhost/" + this.dbname;
     }
     

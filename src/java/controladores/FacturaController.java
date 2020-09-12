@@ -17,7 +17,7 @@ import java.sql.PreparedStatement;
 public class FacturaController {
     
     public static void insertarFactura(Factura factura){
-        ConexionMySQL conexion = new ConexionMySQL("simulador_sunat");
+        ConexionMySQL conexion = new ConexionMySQL();
         Connection conn = conexion.obtenerConexion();
         try {
             PreparedStatement ps = conn.prepareStatement("INSERT INTO FACTURA VALUES (?,?,?,?,?,?,?)");

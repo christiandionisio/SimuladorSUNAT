@@ -17,7 +17,7 @@ import java.sql.PreparedStatement;
 public class DetalleFacturaController {
     
     public static void insertarDetalleFactura(DetalleFactura detalle, String id_factura){
-        ConexionMySQL conexion = new ConexionMySQL("simulador_sunat");
+        ConexionMySQL conexion = new ConexionMySQL();
         Connection conn = conexion.obtenerConexion();
         try {
             PreparedStatement ps = conn.prepareStatement("INSERT INTO DETALLE_FACTURA (id_factura, nombre_producto, cantidad, precio, tipo_moneda) VALUES (?,?,?,?,?)");
